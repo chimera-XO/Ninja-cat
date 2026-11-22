@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+.env
+.env*.local
+*.tsbuildinfo
+next-env.d.ts
+
+# Temporary backups
+*.bak
+*.pre-ready-fix
+*.before-debug.bak

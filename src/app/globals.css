@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: manipulation;
+  background-color: #0e112a;
+}
+
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+@keyframes ninja-sleep-breathe {
+  0%, 100% {
+    transform: translateY(0px) scaleY(1);
+  }
+  50% {
+    transform: translateY(-4px) scaleY(1.03);
+  }
+}
+
+@keyframes float-zzz {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 6px) scale(0.75);
+  }
+  25% {
+    opacity: 0.95;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(14px, -32px) scale(1.15);
+  }
+}
+
+@keyframes snore-pulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.06);
+  }
+}
+
+.animate-ninja-sleep {
+  animation: ninja-sleep-breathe 2.4s ease-in-out infinite;
+}
+
+.animate-zzz-1 {
+  animation: float-zzz 2.2s ease-out infinite;
+}
+
+.animate-zzz-2 {
+  animation: float-zzz 2.2s ease-out 0.7s infinite;
+}
+
+.animate-zzz-3 {
+  animation: float-zzz 2.2s ease-out 1.4s infinite;
+}
+
+.animate-snore {
+  animation: snore-pulse 2.4s ease-in-out infinite;
+}
